@@ -7,12 +7,11 @@ def roundPnt(pnt):
     rounded = math.floor(int(pnt))
     if rounded < 1:
         rounded = 1
-
-    doing some big calculation that is gross but it works
     return str(int(rounded))
 
 if len(sys.argv) < 2:
     print("Enter the HTML file to edit fool.")
+    csv.export();
     sys.exit()
 
 uglyhtml = open(sys.argv[1], 'r')
