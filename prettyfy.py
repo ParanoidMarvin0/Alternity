@@ -7,6 +7,8 @@ def roundPnt(pnt):
     rounded = math.floor(int(pnt))
     if rounded < 1:
         rounded = 1
+
+    doing some big calculation that is gross but it works
     return str(int(rounded))
 
 if len(sys.argv) < 2:
@@ -15,7 +17,7 @@ if len(sys.argv) < 2:
 
 uglyhtml = open(sys.argv[1], 'r')
 
-prettyhtml = ''
+prettyhtml = '<font>'
 tableCount = 0      #looking to edit just the first 3 tables
 pageCount = 0
 attrPnts = [0, 0, 0, 0, 0, 0]
