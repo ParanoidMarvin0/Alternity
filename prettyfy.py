@@ -82,7 +82,7 @@ for l in uglyhtml:
         prettyhtml += "<tr>" + prettyRow + "</tr>"
     else:
         prettyhtml += l
-
+#remember to set working directory to this location
 uglyhtml.close()
 wFile = open("pretty"+ntpath.basename('pretty'+sys.argv[1]), 'w')
 wFile.write(prettyhtml)
